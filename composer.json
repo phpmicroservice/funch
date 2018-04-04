@@ -1,0 +1,28 @@
+{
+    "name": "phpmicroservice/funch",
+    "type": "library",
+    "keywords": ["swoole","phalcon","microservice","websockect","tcp"],
+    "homepage": "http://pms.2xso.com",
+    "description": "PHP的基础函数的增强版本或补充功能",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dongasai",
+            "email": "1514582970@qq.com",
+            "homepage": "http://www.2xso.com",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "php": "7.*"
+    },
+    "require-dev": {
+        "eaglewu/swoole-ide-helper": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "funch\\": "src/"
+        }
+    }
+    
+}

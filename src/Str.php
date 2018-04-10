@@ -14,7 +14,7 @@ class Str
      * @param type $shopid
      * @return type
      */
-    public static function out_trade_no($shopid = 0):string
+    public static function out_trade_no($shopid = 0): string
     {
         return date('Ymd') . sprintf('%08d', $shopid) . substr(microtime(true) * 10000, -9) . mt_rand(100, 999);
     }
@@ -101,19 +101,32 @@ class Str
     }
 
 
-
     /**
      * 字符串替换
      * @param string $str
      * @param array $arr
      * @return string
      */
-    public static function replace(string $str,array $arr):string
+    public static function replace(string $str, array $arr): string
     {
         foreach ($arr as $yuan => $hou) {
             $str = str_replace($yuan, $hou, $str);
         }
         return $str;
+    }
+
+    /**
+     * 生成随机字符串
+     * @param int $pw_length
+     * @return string
+     */
+    function rand($pw_length = 10)
+    {
+        $randpwd = ”;
+        for ($i = 0; $i < $pw_length; $i++) {
+            $randpwd .= chr(mt_rand(33, 126));
+        }
+        return $randpwd;
     }
 
 }

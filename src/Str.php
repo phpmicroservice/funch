@@ -122,7 +122,7 @@ class Str
      */
     function rand($pw_length = 10)
     {
-        $randpwd = ”;
+        $randpwd = '';
         for ($i = 0; $i < $pw_length; $i++) {
             $randpwd .= chr(mt_rand(33, 126));
         }

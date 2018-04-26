@@ -120,7 +120,7 @@ class Str
      * @param int $pw_length
      * @return string
      */
-    function rand($length = 10, $charsb = false)
+    public static function rand($length = 10, $charsb = false)
     {
         $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
         if ($charsb) {

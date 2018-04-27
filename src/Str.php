@@ -126,7 +126,7 @@ class Str
         if ($charsb) {
             $chars .= '!@#$%^&*()-_ []{}<>';
         }
-        $password = ”;
+        $password = '';
         for ($i = 0; $i < $length; $i++) {
             // 这里提供两种字符获取方式
             // 第一种是使用 substr 截取$chars中的任意一位字符；
